@@ -1,8 +1,11 @@
+from flask import Flask, render_template, Blueprint
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
+app = Flask(__name__)
+
 #파일데이터 페이지수와, 데이터 표시갯수 설정 (디폴트 1/50
-pageNum = 3
+pageNum = 1
 dataNum = 50
 html = urlopen("https://www.data.go.kr/tcs/dss/selectDataSetList.do?dType=FILE&keyword=&detailKeyword=&publicDataPk=&recmSe=&detailText=&relatedKeyword=&commaNotInData=&commaAndData=&commaOrData=&must_not=&tabId=&dataSetCoreTf=&coreDataNm=&sort=&relRadio=&orgFullName=&orgFilter=&org=&orgSearch=&currentPage="+str(pageNum)+"&perPage="+str(dataNum)+"&brm=&instt=&svcType=&kwrdArray=&extsn=&coreDataNmArray=&pblonsipScopeCode=")
 soup = BeautifulSoup(html, "html.parser")
@@ -31,6 +34,7 @@ for temps in soup.select("#fileDataList > div.result-list > ul > li > div.info-d
 for temps in soup.select("#fileDataList > div.result-list > ul > li > div.info-data > p:nth-child(2) > span.data"):
     data_Date.append(temps.get_text().strip())
 
+
 i=1
 for temps in soup.select("#fileDataList > div.result-list > ul > li > div.info-data > p:nth-child(5)"):
     check = temps.get_text()[10:].strip()
@@ -38,19 +42,18 @@ for temps in soup.select("#fileDataList > div.result-list > ul > li > div.info-d
     #print(i, str("번째 : "), str(check).isnumeric(), check)
     i=i+1
 
-print("****************************")
+#print("****************************")
 
 i=1
 for k in data_Area:
-    print("@@@K : "+k)
+    #print("@@@K : "+k)
     if str(k).isnumeric():
         temp = soup.select("#fileDataList > div.result-list > ul > li:nth-child("+str(i)+") > div.info-data > p:nth-child(6)")
         check = str(temp).split("</span>")[1]
-        check = check.split("</p>")[0]
-
-        print("재검사 결과 : "+check.strip()[:])
+        check = check.split("</p>")[0].strip()
+        #print("재검사 결과 : "+check)
+        data_Area[i-1] = check
     i=i+1
-
 
 
 '''
@@ -62,6 +65,15 @@ for i in range(dataNum):
     print("Provider : "+ str(data_Provider[i]))
     print("Modify Date : " + data_Date[i])
     print("Data Area : " + data_Area[i] + "\n")
-
-print("Data len : ", len(data_Title))
 '''
+
+app = Flask(__name__)
+
+@app.route('/')
+def main_page():
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(host = "127.0.0.1", port = 5000)
+
+
