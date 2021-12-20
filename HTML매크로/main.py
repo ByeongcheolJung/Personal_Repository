@@ -6,7 +6,7 @@ import time
 from selenium.webdriver.common.keys import Keys
 
 #시작 페이지값 설정!!!
-startNum = 147
+startNum = 165
 
 driver=webdriver.Chrome('chromedriver.exe')
 driver.implicitly_wait(10)
@@ -66,8 +66,6 @@ for k in range(startNum,314):
         i=i+1
 
     #다음 페이지 이동
-    driver.implicitly_wait(10)
     driver.find_element_by_id('next_t_chkOpenMngtGrid_toppager').click()
-    time.sleep(2)
-
-    driver.implicitly_wait(10)
+    print("페이지 이동중..")
+    time.sleep(10)
