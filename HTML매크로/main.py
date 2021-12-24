@@ -6,7 +6,7 @@ import time
 from selenium.webdriver.common.keys import Keys
 
 #시작 페이지값 설정!!!
-startNum = 165
+startNum = 1
 
 driver=webdriver.Chrome('chromedriver.exe')
 driver.implicitly_wait(10)
@@ -19,6 +19,7 @@ driver.implicitly_wait(10)
 driver.get('http://202.30.68.36:8080/odms/checkOpenManagement.do')
 select = Select(driver.find_element_by_id('openUrlCheckSelect'))
 select.select_by_visible_text('승인')
+Select(driver.find_element_by_id('dchkSelect')).select_by_visible_text('(미검토)')
 
 #검색버튼
 driver.find_element_by_id('searchBtn').click()
@@ -41,6 +42,7 @@ for k in range(startNum,314):
     print(str(k) + "번째 페이지 이동")
 
     for i in range(1,51):
+        driver.find_element_by_xpath('//*[@id="1"]/td[11]')
         time.sleep(1)
         driver.find_element_by_xpath('//*[@id='+str(i)+']/td[13]/button').click()
         print("창 열림 완료")
