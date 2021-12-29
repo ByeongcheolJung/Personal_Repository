@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e0990f7-c901-4937-a4dd-21c55dbb4ac5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Web_Crawling/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Web_Crawling/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/TxtToCsv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/merged_ID.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../txt를 엑셀로 정리/personal_info/INFO_9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/.idea/Personal_Repository.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_100.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_19.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_29.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_33.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_36.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_37.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_38.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_39.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_40.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_41.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_42.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_43.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_44.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_45.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_46.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_47.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_48.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_49.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_50.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_51.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_52.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_53.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_54.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_55.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_56.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_57.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_58.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_59.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_60.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_61.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_62.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_63.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_64.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_65.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_66.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_67.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_68.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_69.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_70.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_71.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_72.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_73.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_74.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_75.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_76.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_77.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_78.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_79.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_80.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_81.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_82.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_83.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_84.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_85.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_86.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_87.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_88.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_89.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_90.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_91.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_92.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_93.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_94.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_95.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_96.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_97.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_98.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../랜덤유저 만들기/personal_info/INFO_99.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="22IgN3WFmCPnL6GUGqB4a7MvFBE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Personal_Repository" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e0990f7-c901-4937-a4dd-21c55dbb4ac5" name="Changes" comment="" />
+      <created>1639530471639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639530471639</updated>
+    </task>
+    <servers />
+  </component>
+</project>
