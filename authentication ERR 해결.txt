@@ -1,0 +1,9 @@
+소스트리에서 푸쉬 후 authentication 에러 발생시,
+
+C:\Users\USERNAME\AppData\Local\Atlassian\SourceTree 해당 URL로 이동,
+
+이동 후 passwd, setting.log, askpass.log 3개 삭제 후 다시 푸쉬 할경우 로그인 물어봄
+
+그때 https://github.com/settings/tokens 여기로 들어가서 토큰 삭제 후 다시 받은 다음 받은 토큰 복사해서 붙여넣기 하면 됨.
+
+소스트리에서 물어볼때 Username은 말그대로 byeongcheolJung 입력하고 passwd에 받은 토큰값 쓰면됨
