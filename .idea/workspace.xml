@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/업무 자동화 공부/File_name_change" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDF_Extraction/PDF_Extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/PDF_Extraction/PDF_Extraction.py" afterDir="false" />
-    </list>
+    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
