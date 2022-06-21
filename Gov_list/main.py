@@ -24,8 +24,12 @@ driver.find_element(By.ID, 'password').send_keys("master!234")
 driver.find_element(By.CLASS_NAME, 'login-form-btn').click()
 driver.implicitly_wait(10)
 
-#DB확정상태 검색
-driver.get('https://gooddata.go.kr/dqe/admin/databases?page=0&searchYear=2022&dbSelectionStatus=SELECTED&institutionCode=')
+#DB확정상태 검색!!!
+#driver.get('https://gooddata.go.kr/dqe/admin/databases?page=0&searchYear=2022&dbSelectionStatus=SELECTED&institutionCode=')
+
+#전체 기관 뽑을떄!!!
+driver.get('https://gooddata.go.kr/dqe/admin/databases?page=0&searchYear=2022&')
+
 
 #결과값 갯수
 search_result = driver.find_element(By.XPATH, '//*[@id="app"]/div[4]/div/div[1]/span').text
@@ -43,7 +47,15 @@ stoppoint = True
 
 for page in range(0,pageNum+1):
 
-        driver.get('https://gooddata.go.kr/dqe/admin/databases?page='+str(page)+'&searchYear=2022&dbSelectionStatus=SELECTED&institutionCode=')
+        #확정상태 뽑을떄!!!
+        #driver.get('https://gooddata.go.kr/dqe/admin/databases?page='+str(page)+'&searchYear=2022&dbSelectionStatus=SELECTED&institutionCode=')
+
+        #전체 기관 뽑을떄!!!
+        driver.get('https://gooddata.go.kr/dqe/admin/databases?page='+str(page)+'&searchYear=2022&isTarget=true&institutionCode=')
+
+
+
+
         driver.implicitly_wait(10)
         for i in range(0,10):
 
@@ -86,5 +98,5 @@ for x in range(0,search_res):
 
 
 
-workbook.save('RESULT_'+str(time.localtime().tm_mon)+str(time.localtime().tm_mday)+'.xlsx')
+workbook.save('RESULT_'+str(time.localtime().tm_mon)+str(time.localtime().tm_mday)+'_'+str(time.localtime().tm_hour)+str(time.localtime().tm_min)+'.xlsx')
 workbook.close()
