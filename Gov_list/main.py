@@ -27,6 +27,9 @@ driver.implicitly_wait(10)
 #DB확정상태 검색!!!
 #driver.get('https://gooddata.go.kr/dqe/admin/databases?page=0&searchYear=2022&dbSelectionStatus=SELECTED&institutionCode=')
 
+#대상여부 O만 뽑을떄!!!
+#https://gooddata.go.kr/dqe/admin/databases?searchYear=2022&isTarget=true&isSelected=&dbSelectionStatus=&institutionType=&institutionCode=&insttName=
+
 #전체 기관 뽑을떄!!!
 driver.get('https://gooddata.go.kr/dqe/admin/databases?page=0&searchYear=2022&')
 
@@ -46,14 +49,15 @@ stoppoint = True
 #데이터 저장
 
 for page in range(0,pageNum+1):
-        print('진행중인 페이지 : ' + page + 1)
+        print(page+1)
         #확정상태 뽑을떄!!!
         #driver.get('https://gooddata.go.kr/dqe/admin/databases?page='+str(page)+'&searchYear=2022&dbSelectionStatus=SELECTED&institutionCode=')
 
-        #전체 기관 뽑을떄!!!
-        driver.get('https://gooddata.go.kr/dqe/admin/databases?page='+str(page)+'&searchYear=2022&isTarget=true&institutionCode=')
+        #대상여부가 O인 기관만 뽑을떄!!!
+        #driver.get('https://gooddata.go.kr/dqe/admin/databases?page='+str(page)+'&searchYear=2022&isTarget=true&institutionCode=')
 
-
+        #대상기괸 다 뽑을떄!!!
+        driver.get('https://gooddata.go.kr/dqe/admin/databases?page='+str(page)+'&searchYear=2022&')
 
 
         driver.implicitly_wait(10)
@@ -66,6 +70,7 @@ for page in range(0,pageNum+1):
                         print("페이지 크롤링 끝")
                         stoppoint = False
                         break
+
                 data_array[i+page*10][1] = driver.find_element(By.XPATH, '// *[ @ id = "app"] / div[4] / div / div[1] / div[7] / table / tbody / tr['+lineNum+'] / td[3]').text
                 data_array[i+page*10][2] = driver.find_element(By.XPATH, '// *[ @ id = "app"] / div[4] / div / div[1] / div[7] / table / tbody / tr['+lineNum+'] / td[4]').text
                 data_array[i+page*10][3] = driver.find_element(By.XPATH, '//*[@id="app"]/div[4]/div/div[1]/div[7]/table/tbody/tr['+lineNum+']/td[5]/a').text

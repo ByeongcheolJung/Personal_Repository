@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="06-20 &gt; 데이터 전체 뽑는것도 추가함.&#10;11번째줄이랑 28번째줄 코드 확인하고 실행!!!">
+    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="06-29 / 최종버젼 업데이트">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gov_list/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gov_list/main.py" afterDir="false" />
     </list>
@@ -174,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655770312138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="06-29 / 최종버젼 업데이트">
+      <created>1656484026376</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656484026376</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +199,7 @@
     <MESSAGE value="06-17 최신화" />
     <MESSAGE value="06-17 기관 DB선정 완료 크롤링 (완성햇뜨아!)" />
     <MESSAGE value="06-20 &gt; 데이터 전체 뽑는것도 추가함.&#10;11번째줄이랑 28번째줄 코드 확인하고 실행!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="06-20 &gt; 데이터 전체 뽑는것도 추가함.&#10;11번째줄이랑 28번째줄 코드 확인하고 실행!!!" />
+    <MESSAGE value="06-29 / 최종버젼 업데이트" />
+    <option name="LAST_COMMIT_MESSAGE" value="06-29 / 최종버젼 업데이트" />
   </component>
 </project>
