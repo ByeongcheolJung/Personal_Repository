@@ -15,10 +15,10 @@ worksheet = workbook.active
 
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-#로그인 화면 이동
 driver.get('https://gooddata.go.kr/dqe/account/login')
 driver.implicitly_wait(30)
 #아이디 비밀번호 입력후 로그인
+#로그인 화면 이동
 driver.find_element(By.ID, 'username').send_keys("systemMaster")
 driver.find_element(By.ID, 'password').send_keys("master!234")
 driver.find_element(By.CLASS_NAME, 'login-form-btn').click()
@@ -46,7 +46,7 @@ stoppoint = True
 #데이터 저장
 
 for page in range(0,pageNum+1):
-
+        print('진행중인 페이지 : ' + page + 1)
         #확정상태 뽑을떄!!!
         #driver.get('https://gooddata.go.kr/dqe/admin/databases?page='+str(page)+'&searchYear=2022&dbSelectionStatus=SELECTED&institutionCode=')
 
