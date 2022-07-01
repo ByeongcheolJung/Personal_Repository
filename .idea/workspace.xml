@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="06-29 / 최종버젼 업데이트">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gov_list/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gov_list/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
