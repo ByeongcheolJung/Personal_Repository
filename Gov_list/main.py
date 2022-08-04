@@ -13,14 +13,13 @@ from openpyxl import load_workbook
 workbook = load_workbook('양식.xlsx')
 worksheet = workbook.active
 
-
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 driver.get('https://gooddata.go.kr/dqe/account/login')
 driver.implicitly_wait(30)
 #아이디 비밀번호 입력후 로그인
 #로그인 화면 이동
-driver.find_element(By.ID, 'username').send_keys("systemMaster")
-driver.find_element(By.ID, 'password').send_keys("master!234")
+driver.find_element(By.ID, 'username').send_keys("sysMaster")
+driver.find_element(By.ID, 'password').send_keys("sys!234%")
 driver.find_element(By.CLASS_NAME, 'login-form-btn').click()
 driver.implicitly_wait(10)
 
@@ -101,7 +100,22 @@ for x in range(0,search_res):
         for y in range(0, 19):
                 worksheet.cell(row = 3+x,column=y+1, value=data_array[x][y])
 
+today_month = ""
+if time.localtime().tm_mon<10:
+        today_month = "0" + str(time.localtime().tm_mon)
+
+today_day = ""
+if time.localtime().tm_mday<10:
+        today_day = "0" + str(time.localtime().tm_mday)
+
+today_hour = ""
+if time.localtime().tm_hour<10:
+        today_hour = "0" + str(time.localtime().tm_hour)
+
+today_min = ""
+if time.localtime().tm_min<10:
+        today_min = "0" + str(time.localtime().tm_min)
 
 
-workbook.save('RESULT_'+str(time.localtime().tm_mon)+str(time.localtime().tm_mday)+'_'+str(time.localtime().tm_hour)+str(time.localtime().tm_min)+'.xlsx')
+workbook.save('CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx')
 workbook.close()
