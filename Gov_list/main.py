@@ -29,9 +29,9 @@ driver.implicitly_wait(10)
 #대상여부 O만 뽑을떄!!!
 #https://gooddata.go.kr/dqe/admin/databases?searchYear=2022&isTarget=true&isSelected=&dbSelectionStatus=&institutionType=&institutionCode=&insttName=
 
+
 #전체 기관 뽑을떄!!!
 driver.get('https://gooddata.go.kr/dqe/admin/databases?page=0&searchYear=2022&')
-
 
 #결과값 갯수
 search_result = driver.find_element(By.XPATH, '//*[@id="app"]/div[4]/div/div[1]/span').text
@@ -103,18 +103,26 @@ for x in range(0,search_res):
 today_month = ""
 if time.localtime().tm_mon<10:
         today_month = "0" + str(time.localtime().tm_mon)
+else:
+        today_month = str(time.localtime().tm_mon)
 
 today_day = ""
 if time.localtime().tm_mday<10:
         today_day = "0" + str(time.localtime().tm_mday)
+else:
+        today_day = str(time.localtime().tm_mday)
 
 today_hour = ""
 if time.localtime().tm_hour<10:
         today_hour = "0" + str(time.localtime().tm_hour)
+else:
+        today_hour = str(time.localtime().tm_hour)
 
 today_min = ""
 if time.localtime().tm_min<10:
         today_min = "0" + str(time.localtime().tm_min)
+else:
+        today_min = str(time.localtime().tm_min)
 
 
 workbook.save('CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx')
