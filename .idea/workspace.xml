@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="08-05 / 파일에 시간분 표시안되는거 수정">
+    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="08-24 / 한번 갱신">
+      <change afterPath="$PROJECT_DIR$/Python_GUI/GUI_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gov_list/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gov_list/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +51,8 @@
       <recent name="C:\Users\Gurutech\Documents\Personal_Repository\업무 자동화 공부\테스트" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
-    <configuration name="File_name_change" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.GUI_example">
+    <configuration name="File_name_change" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Personal_Repository" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,6 +65,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/업무 자동화 공부/File_name_change" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GUI_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Personal_Repository" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_GUI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_GUI/GUI_example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,7 +159,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.File_name_change" />
+        <item itemvalue="Python.GUI_example" />
         <item itemvalue="Python.PDF_Extraction" />
         <item itemvalue="Python.main" />
       </list>
@@ -195,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659688802344</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="08-24 / 한번 갱신">
+      <created>1661317354116</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661317354116</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +244,7 @@
     <MESSAGE value="06-29 / 최종버젼 업데이트" />
     <MESSAGE value="08-04 / 파일명 날짜 수정" />
     <MESSAGE value="08-05 / 파일에 시간분 표시안되는거 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="08-05 / 파일에 시간분 표시안되는거 수정" />
+    <MESSAGE value="08-24 / 한번 갱신" />
+    <option name="LAST_COMMIT_MESSAGE" value="08-24 / 한번 갱신" />
   </component>
 </project>
