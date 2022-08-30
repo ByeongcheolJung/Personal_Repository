@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="08-24 / 한번 갱신">
-      <change afterPath="$PROJECT_DIR$/Python_GUI/GUI_example.py" afterDir="false" />
+    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="08-24 / GUI연습 ㅎㅎ;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gov_list/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gov_list/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/엑셀공부/기관점수통계(송차장님)_1.1v.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <recent name="C:\Users\Gurutech\Documents\Personal_Repository\업무 자동화 공부\테스트" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GUI_example">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="File_name_change" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Personal_Repository" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661317354116</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="08-24 / GUI연습 ㅎㅎ;">
+      <created>1661331654978</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661331654978</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +253,7 @@
     <MESSAGE value="08-04 / 파일명 날짜 수정" />
     <MESSAGE value="08-05 / 파일에 시간분 표시안되는거 수정" />
     <MESSAGE value="08-24 / 한번 갱신" />
-    <option name="LAST_COMMIT_MESSAGE" value="08-24 / 한번 갱신" />
+    <MESSAGE value="08-24 / GUI연습 ㅎㅎ;" />
+    <option name="LAST_COMMIT_MESSAGE" value="08-24 / GUI연습 ㅎㅎ;" />
   </component>
 </project>

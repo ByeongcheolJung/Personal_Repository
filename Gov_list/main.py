@@ -125,8 +125,10 @@ if time.localtime().tm_min<10:
 else:
         today_min = str(time.localtime().tm_min)
 
-print("[저장위치] >>> "+os.getcwd()+'\CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx'+" 저장완료!!!")
+excelname = 'CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx'+" 저장완료!!!"
+print("[저장위치] >>> "+os.getcwd()+"\\"+excelname)
 
 workbook.save('CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx')
 workbook.close()
 
+os.startfile(os.getcwd())
