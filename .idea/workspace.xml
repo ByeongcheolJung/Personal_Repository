@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="08-24 / GUI연습 ㅎㅎ;">
+    <list default="true" id="894db206-8bb2-47a7-9948-47349c79b4b7" name="Changes" comment="08-30 / 저장 이후 탐색기 열기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gov_list/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gov_list/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/엑셀공부/기관점수통계(송차장님)_1.1v.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661331654978</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="08-30 / 저장 이후 탐색기 열기">
+      <created>1661818180347</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661818180347</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +260,7 @@
     <MESSAGE value="08-05 / 파일에 시간분 표시안되는거 수정" />
     <MESSAGE value="08-24 / 한번 갱신" />
     <MESSAGE value="08-24 / GUI연습 ㅎㅎ;" />
-    <option name="LAST_COMMIT_MESSAGE" value="08-24 / GUI연습 ㅎㅎ;" />
+    <MESSAGE value="08-30 / 저장 이후 탐색기 열기" />
+    <option name="LAST_COMMIT_MESSAGE" value="08-30 / 저장 이후 탐색기 열기" />
   </component>
 </project>

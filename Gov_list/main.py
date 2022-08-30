@@ -95,12 +95,14 @@ for page in range(0,pageNum+1):
         else:
                 break
 
+#데이터 넣기
 for x in range(0,search_res):
         #결과 표시
         #print(data_array[x])
         for y in range(0, 19):
                 worksheet.cell(row = 3+x,column=y+1, value=data_array[x][y])
 
+#파일 저장할때 시간 설정
 today_month = ""
 if time.localtime().tm_mon<10:
         today_month = "0" + str(time.localtime().tm_mon)
@@ -125,10 +127,12 @@ if time.localtime().tm_min<10:
 else:
         today_min = str(time.localtime().tm_min)
 
+
+#Excel로 데이터 저장
 excelname = 'CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx'+" 저장완료!!!"
 print("[저장위치] >>> "+os.getcwd()+"\\"+excelname)
-
 workbook.save('CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx')
 workbook.close()
 
+#경로에 있는 파일 탐색기 열기
 os.startfile(os.getcwd())
