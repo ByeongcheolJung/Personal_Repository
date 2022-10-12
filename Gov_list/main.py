@@ -1,4 +1,4 @@
-import time
+import time, shutil
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -7,14 +7,49 @@ from webdriver_manager.chrome import ChromeDriverManager
 import re
 from openpyxl import load_workbook
 
+
+#오늘 날짜 설정
+today_month = ""
+if time.localtime().tm_mon<10:
+        today_month = "0" + str(time.localtime().tm_mon)
+else:
+        today_month = str(time.localtime().tm_mon)
+
+today_day = ""
+if time.localtime().tm_mday<10:
+        today_day = "0" + str(time.localtime().tm_mday)
+else:
+        today_day = str(time.localtime().tm_mday)
+
+#일일보고 파일 복사
+#report_daily = r'C:\Users\Gurutech\Desktop\일일보고'
+#shutil.copy(report_daily+"\\test.txt",report_daily+"\\"+today_month+today_day+".txt")
+
+
+
 workbook = load_workbook('양식.xlsx')
 worksheet = workbook.active
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+#로그인 페이지 이동
 driver.get('https://gooddata.go.kr/dqe/account/login')
 driver.implicitly_wait(30)
+print("PMO자료 다운로드")
+driver.find_element(By.ID, 'username').send_keys("pmo")
+driver.find_element(By.ID, 'password').send_keys("pmo!234%")
+driver.find_element(By.CLASS_NAME, 'login-form-btn').click()
+driver.implicitly_wait(10)
+#PMO자료 다운로드 10/04 PMO계정 막힘
+driver.get('https://gooddata.go.kr/dqe/pmo/databases/databasesXlsDownload')
+driver.implicitly_wait(20)
+driver.find_element(By.XPATH, '//*[@id="navbarDropdown"]/div/span[2]').click()
+driver.find_element(By.XPATH, '/html/body/div[3]/div[1]/div[3]/div/div/form/input[2]').click()
+
+
+
 
 #아이디 비밀번호 입력후 로그인 화면 이동
+print("웹페이지 크롤링")
 driver.find_element(By.ID, 'username').send_keys("sysMaster")
 driver.find_element(By.ID, 'password').send_keys("sys!234%")
 driver.find_element(By.CLASS_NAME, 'login-form-btn').click()
@@ -103,18 +138,6 @@ for x in range(0,search_res):
                 worksheet.cell(row = 3+x,column=y+1, value=data_array[x][y])
 
 #파일 저장할때 시간 설정
-today_month = ""
-if time.localtime().tm_mon<10:
-        today_month = "0" + str(time.localtime().tm_mon)
-else:
-        today_month = str(time.localtime().tm_mon)
-
-today_day = ""
-if time.localtime().tm_mday<10:
-        today_day = "0" + str(time.localtime().tm_mday)
-else:
-        today_day = str(time.localtime().tm_mday)
-
 today_hour = ""
 if time.localtime().tm_hour<10:
         today_hour = "0" + str(time.localtime().tm_hour)
