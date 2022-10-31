@@ -1,4 +1,4 @@
-import time, shutil
+import time, shutil, sys
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -21,11 +21,33 @@ if time.localtime().tm_mday<10:
 else:
         today_day = str(time.localtime().tm_mday)
 
-#일일보고 파일 복사
-#report_daily = r'C:\Users\Gurutech\Desktop\일일보고'
-#shutil.copy(report_daily+"\\test.txt",report_daily+"\\"+today_month+today_day+".txt")
+
+#파일 저장할때 시간 설정
+today_hour = ""
+if time.localtime().tm_hour<10:
+        today_hour = "0" + str(time.localtime().tm_hour)
+else:
+        today_hour = str(time.localtime().tm_hour)
+
+today_min = ""
+if time.localtime().tm_min<10:
+        today_min = "0" + str(time.localtime().tm_min)
+else:
+        today_min = str(time.localtime().tm_min)
 
 
+#일일보고 파일 복사, 월,일,시,분 입력된상태로 만들어짐
+file_path = 'C:\\Users\\Gurutech\\Desktop\\일일보고\\'
+file_timestamp = today_month+today_day+'_'+today_hour+today_min
+file_name = file_path+'일일보고 ('+file_timestamp+')'
+
+try:
+        os.mkdir(file_name)
+        print("파일 생성")
+except:
+        print("파일 이미 존재. 덮어쓰기")
+
+shutil.copy(file_path+'양식파일(복사해서 쓰세요)\\통계생성엑셀_원본v1.7.xlsx' ,file_name+'\\통계생성엑셀_원본v1.7.xlsx')
 
 workbook = load_workbook('양식.xlsx')
 worksheet = workbook.active
@@ -39,13 +61,14 @@ driver.find_element(By.ID, 'username').send_keys("pmo")
 driver.find_element(By.ID, 'password').send_keys("pmo!234%")
 driver.find_element(By.CLASS_NAME, 'login-form-btn').click()
 driver.implicitly_wait(10)
-#PMO자료 다운로드 10/04 PMO계정 막힘
+
 driver.get('https://gooddata.go.kr/dqe/pmo/databases/databasesXlsDownload')
 driver.implicitly_wait(20)
 driver.find_element(By.XPATH, '//*[@id="navbarDropdown"]/div/span[2]').click()
 driver.find_element(By.XPATH, '/html/body/div[3]/div[1]/div[3]/div/div/form/input[2]').click()
-
-
+#PMO다운 파일 복사
+shutil.copy('C:\\Users\\Gurutech\\Downloads\\2022'+today_month+today_day+'_보유DB현황.xlsx' ,file_name+'\\2022'+today_month+today_day+'_보유DB현황.xlsx')
+os.remove('C:\\Users\\Gurutech\\Downloads\\2022'+today_month+today_day+'_보유DB현황.xlsx')
 
 
 #아이디 비밀번호 입력후 로그인 화면 이동
@@ -137,25 +160,12 @@ for x in range(0,search_res):
         for y in range(0, 19):
                 worksheet.cell(row = 3+x,column=y+1, value=data_array[x][y])
 
-#파일 저장할때 시간 설정
-today_hour = ""
-if time.localtime().tm_hour<10:
-        today_hour = "0" + str(time.localtime().tm_hour)
-else:
-        today_hour = str(time.localtime().tm_hour)
-
-today_min = ""
-if time.localtime().tm_min<10:
-        today_min = "0" + str(time.localtime().tm_min)
-else:
-        today_min = str(time.localtime().tm_min)
-
 
 #Excel로 데이터 저장
-excelname = 'CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx'+" 저장완료!!!"
-print("[저장위치] >>> "+os.getcwd()+"\\"+excelname)
-workbook.save('CRAWLING-RESULT_'+today_month+today_day+'_'+today_hour+today_min+'.xlsx')
+excelname = 'CRAWLING-RESULT_'+file_timestamp+'.xlsx'
+print("[저장위치] >>> "+file_name+'\\CRAWLING-RESULT_'+file_timestamp+'.xlsx')
+workbook.save(file_name+'\\CRAWLING-RESULT_'+file_timestamp+'.xlsx')
 workbook.close()
 
 #경로에 있는 파일 탐색기 열기
-os.startfile(os.getcwd())
+os.startfile(file_name)
