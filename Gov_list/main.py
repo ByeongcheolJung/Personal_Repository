@@ -43,11 +43,11 @@ file_name = file_path+'일일보고 ('+file_timestamp+')'
 
 try:
         os.mkdir(file_name)
-        print("파일 생성")
+        print(file_name+" 파일 생성")
 except:
-        print("파일 이미 존재. 덮어쓰기")
+        print(file_name+" 파일 이미 존재. 덮어쓰기")
 
-shutil.copy(file_path+'양식파일(복사해서 쓰세요)\\통계생성엑셀_원본v1.7.xlsx' ,file_name+'\\통계생성엑셀_원본v1.7.xlsx')
+shutil.copy(file_path+'양식파일(복사해서 쓰세요)\\통계생성엑셀_원본v1.8.xlsx' ,file_name+'\\통계생성엑셀_원본v1.8.xlsx')
 
 workbook = load_workbook('양식.xlsx')
 worksheet = workbook.active
@@ -58,7 +58,7 @@ driver.get('https://gooddata.go.kr/dqe/account/login')
 driver.implicitly_wait(30)
 print("PMO자료 다운로드")
 driver.find_element(By.ID, 'username').send_keys("pmo")
-driver.find_element(By.ID, 'password').send_keys("pmo!234%")
+driver.find_element(By.ID, 'password').send_keys("pmo$567*")
 driver.find_element(By.CLASS_NAME, 'login-form-btn').click()
 driver.implicitly_wait(10)
 
@@ -67,6 +67,7 @@ driver.implicitly_wait(20)
 driver.find_element(By.XPATH, '//*[@id="navbarDropdown"]/div/span[2]').click()
 driver.find_element(By.XPATH, '/html/body/div[3]/div[1]/div[3]/div/div/form/input[2]').click()
 #PMO다운 파일 복사
+print("PMO파일 복사 및 원본 삭제")
 shutil.copy('C:\\Users\\Gurutech\\Downloads\\2022'+today_month+today_day+'_보유DB현황.xlsx' ,file_name+'\\2022'+today_month+today_day+'_보유DB현황.xlsx')
 os.remove('C:\\Users\\Gurutech\\Downloads\\2022'+today_month+today_day+'_보유DB현황.xlsx')
 
@@ -74,7 +75,7 @@ os.remove('C:\\Users\\Gurutech\\Downloads\\2022'+today_month+today_day+'_보유D
 #아이디 비밀번호 입력후 로그인 화면 이동
 print("웹페이지 크롤링")
 driver.find_element(By.ID, 'username').send_keys("sysMaster")
-driver.find_element(By.ID, 'password').send_keys("sys!234%")
+driver.find_element(By.ID, 'password').send_keys("sys$567*")
 driver.find_element(By.CLASS_NAME, 'login-form-btn').click()
 driver.implicitly_wait(10)
 
@@ -159,7 +160,6 @@ for x in range(0,search_res):
         #print(data_array[x])
         for y in range(0, 19):
                 worksheet.cell(row = 3+x,column=y+1, value=data_array[x][y])
-
 
 #Excel로 데이터 저장
 excelname = 'CRAWLING-RESULT_'+file_timestamp+'.xlsx'
