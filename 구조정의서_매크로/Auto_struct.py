@@ -129,14 +129,13 @@ ws = wb.active
 row_max = ws.max_row-2
 notnull_index = row_max
 #데이터 복사후 임시 저장
-dataarray = [[0 for col in range(5)] for row in range(row_max+1)]
+dataarray = [[0 for col in range(7)] for row in range(row_max+1)]
 #NOT NULL여부 확인용 임시 배열
 notnullarray = [0 for col in range(row_max+1)]
 
 for i in range(0,row_max):
-    for x in range(0,5):
-        dataarray[i][x] = ws.cell(row=3+i, column=x+3).value
-    #print(dataarray[i])
+    for x in range(0,7):
+        dataarray[i][x] = ws.cell(row=3+i, column=x+1).value
 wb.close()
 
 #테이블 정의서 붙여넣기
@@ -145,28 +144,29 @@ ws = wb.active
 ws = wb['컬럼정의서']
 
 for x in range(0,len(dataarray)-1):
-    for y in range(0,4):
+    for y in range(0,7):
         ws.cell(row=x+2, column=y+1).value = dataarray[x][y]
 
     #print(str(dataarray[x][4]))
     #데이터 타입 표시
-    if '(' not in str(dataarray[x][4]):
-        ws.cell(row=x+2, column=5).value = dataarray[x][4]
+    if '(' not in str(dataarray[x][6]):
+        ws.cell(row=x+2, column=7).value = dataarray[x][6]
     else:
         #데이터 길이 표시
-        split_data = dataarray[x][4]
-        ws.cell(row=x+2, column=5).value = split_data[:split_data.find('(')]
+        split_data = dataarray[x][6]
+        ws.cell(row=x+2, column=7).value = split_data[:split_data.find('(')]
         split_data_length = split_data[split_data.find('(')+1:len(split_data)-1]
 
         #소수점 길이 표시
-        if ',' not in split_data_length:
-            ws.cell(row=x+2, column=6).value = split_data_length
+        if ',' in split_data_length:
+            ws.cell(row=x+2, column=8).value = split_data_length[:split_data_length.find(',')]
+            ws.cell(row=x+2, column=9).value = split_data_length[split_data_length.find(',')+1:]
         else:
-            ws.cell(row=x+2, column=6).value = split_data_length[:split_data_length.find(',')]
-            ws.cell(row=x+2, column=7).value = split_data_length[split_data_length.find(',')+1:]
+            ws.cell(row=x+2, column=8).value = split_data_length
+
 
     #NOT NULL 배열에 테이블명 + 컬럼명으로 키값 생성
-    notnullarray[x] = dataarray[x][0] + dataarray[x][2]
+    notnullarray[x] = dataarray[x][2] + dataarray[x][4]
 wb.save(copy_filename+"\\"+gov_name+'_구조정의서.xlsx')    
 wb.close()
 
@@ -193,7 +193,7 @@ ws = wb['컬럼정의서']
 for x in range(0, notnull_index):
     for y in range(0, row_max):
         if notnullarray[x] == dataarray[y][0]:
-            ws.cell(row=x+2, column=8).value = dataarray[y][1]
+            ws.cell(row=x+2, column=10).value = dataarray[y][1]
             break
 
 
@@ -204,5 +204,3 @@ wb.close()
 
 #경로에 있는 파일 탐색기 열기
 os.startfile(file_path)
-
-time.sleep(100)
